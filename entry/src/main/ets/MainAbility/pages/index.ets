@@ -23,8 +23,14 @@ struct Index {
     {
       icon: $r('app.media.icon'),
       icon_after: $r("app.media.cola"),
-      text: '我的',
+      text: '圈子',
       num: 2
+    },
+    {
+      icon: $r('app.media.icon'),
+      icon_after: $r("app.media.cola"),
+      text: '我的',
+      num: 3
     }
   ]
 
@@ -70,6 +76,12 @@ struct Index {
       }
       else if (this.currentIndex == 1) {
         Text('学习')
+          .width('100%')
+          .height(200)
+          .fontSize(40)
+      }
+      else if (this.currentIndex == 2) {
+        Text('圈子')
           .width('100%')
           .height(200)
           .fontSize(40)
